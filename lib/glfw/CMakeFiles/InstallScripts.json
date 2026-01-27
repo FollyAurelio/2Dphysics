@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/pancake/Documents/2Dphysics/lib/glfw/cmake_install.cmake",
+		"/home/pancake/Documents/2Dphysics/lib/glfw/src/cmake_install.cmake",
+		"/home/pancake/Documents/2Dphysics/lib/glfw/examples/cmake_install.cmake",
+		"/home/pancake/Documents/2Dphysics/lib/glfw/tests/cmake_install.cmake",
+		"/home/pancake/Documents/2Dphysics/lib/glfw/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
