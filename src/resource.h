@@ -1,5 +1,7 @@
 #pragma once
 
-const char* loadResourceFromFile(const char* filePath);
+#include <string>
+
+std::string loadResourceFromFile(const char* filePath);
 	
 
