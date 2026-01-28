@@ -61,3 +61,4 @@ dkms.conf
 *.js
 __pycache__/
 CMakeCache.txt
+.gdbinit

@@ -1,6 +1,6 @@
 #include "gfx.h"
-#include "assert_log.h"
-#include "rs.h"
+#include "assert.h"
+#include "resource.h"
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
@@ -59,7 +59,6 @@ int main() {
 	// build and compile our shader program
 	// ------------------------------------
 	// vertex shader
-	ASSERT(0, "MES");
 	loadResourceFromFile("srca");
 	unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);

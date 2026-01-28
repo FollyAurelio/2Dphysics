@@ -22,3 +22,4 @@ void reportLogInteger(const char* message, ssize_t value)
 {
 	std::cout << message << '\n';
 }
+*/
