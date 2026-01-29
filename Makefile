@@ -28,7 +28,7 @@ dirs:
 program:$(OBJ)
 	$(CXX) -o $(BIN)/main $^ $(LDFLAGS) 
 %.o:%.cpp
-	$(CXX) -o $@ -c $< $(CXXFLAGS) -DASSERTIONS_ENABLED
+	$(CXX) -o $@ -c $< $(CXXFLAGS) -DASSERTIONS_ENABLED -DLOGGING_ENABLED -DLOGGING_VERBOSITY=3
 run:program
 	$(BIN)/main
 

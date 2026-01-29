@@ -9,7 +9,7 @@ void reportAssertError(const char* expr, const char* message, const char* file, 
 	if(expr){}\
 	else{\
 		reportAssertError(#expr,message,__FILE__,__LINE__);\
-	}
+	}\
 
 #else
 
