@@ -27,8 +27,10 @@ const char *fragmentShaderSource =
 	"}\n\0";
 
 int main() {
+	initLog();
 	// glfw: initialize and configure
 	// ------------------------------
+	
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -61,7 +63,6 @@ int main() {
 	// ------------------------------------
 	// vertex shader
 	std::cout << loadResourceFromFile("src/shaders/basic.vs");
-	LOG(1,LOG_MISC, "A string %d %d %d", 4, 5,6);
 	unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
 	glCompileShader(vertexShader);

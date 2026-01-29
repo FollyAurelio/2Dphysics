@@ -28,7 +28,7 @@ dirs:
 program:$(OBJ)
 	$(CXX) -o $(BIN)/main $^ $(LDFLAGS) 
 %.o:%.cpp
-	$(CXX) -o $@ -c $< $(CXXFLAGS) -DASSERTIONS_ENABLED -DLOGGING_ENABLED -DLOGGING_VERBOSITY=3
+	$(CXX) -o $@ -c $< $(CXXFLAGS) -DASSERTIONS_ENABLED -DLOGGING_ENABLED -DLOGGING_VERBOSITY=3 '-DMIRROR_FILE="log/output"'
 run:program
 	$(BIN)/main
 

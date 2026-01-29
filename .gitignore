@@ -1,4 +1,5 @@
 bin/
+log/
 
 *.icloud
 .DS_Store
