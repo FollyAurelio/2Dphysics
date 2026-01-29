@@ -63,6 +63,7 @@ int main() {
 	// ------------------------------------
 	// vertex shader
 	std::cout << loadResourceFromFile("src/shaders/basic.vs");
+	LOG(3, LOG_MISC, "test", NULL);
 	unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
 	glCompileShader(vertexShader);

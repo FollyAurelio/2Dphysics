@@ -15,9 +15,10 @@ enum LogChannel
 	LOG_GRAPHICS = 1,
 	LOG_PHYSICS = 2,
 	LOG_MISC = 4,
+	LOG_ALLWAYS = 7,
 };
 
-// This bitmask determines which log channels are ennabled enabled channels are logged
+// This bitmask determines which log channels are ennabled
 #define LOG_CHANNELS (LOG_GRAPHICS | LOG_MISC | LOG_PHYSICS)
 
 void initLog();
